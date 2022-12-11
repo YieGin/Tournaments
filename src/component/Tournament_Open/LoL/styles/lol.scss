@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.Image5 {
+  height: 300px;
+  width: 100%;
+}
+.League_1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+.Images-2-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 80;
+}
+.Main_left_right {
+  display: flex;
+}
+.League_Right {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  color: white;
+  row-gap: 50px;
+}
+.League_2 {
+  background-color: #0f1519;
+  height: 180px;
+  width: 90%;
+  color: white;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.League_3 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 8%;
+}
+.League_4 {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 100%;
+  justify-content: center;
+  text-align: justify;
+  row-gap: 15px;
+  border: solid rgb(64, 64, 64) 1px;
+  border-top: none;
+  border-bottom: none;
+}
+.League_4 > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5 {
+  color: #05f385;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.VIEW {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+
+
+//  btn4
+.btn-group4 {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  & a:nth-child(1) {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.597);
+    color: #05f385;
+    & .Spann:nth-child(1) {
+      background: linear-gradient(to right, #292929, #ffffff);
+    }
+    & .Spann:nth-child(2) {
+      background: linear-gradient(to bottom, #292929, #ffffff);
+    }
+    & .Spann:nth-child(3) {
+      background: linear-gradient(to left, #292929, #ffffff);
+    }
+    & .Spann:nth-child(4) {
+      background: linear-gradient(to top, #292929, #ffffff);
+    }
+    &:hover {
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+  }
+  & a:nth-child(2) {
+    color: #00A600;
+    & .Spann:nth-child(1) {
+      background: linear-gradient(to right, #0c002b, #996515);
+    }
+    & .Spann:nth-child(2) {
+      background: linear-gradient(to bottom, #0c002b, #996515);
+    }
+    & .Spann:nth-child(3) {
+      background: linear-gradient(to left, #0c002b, #996515);
+    }
+    & .Spann:nth-child(4) {
+      background: linear-gradient(to top, #0c002b, #996515);
+    }
+    &:hover {
+      box-shadow: 0 0 20px rgba(0, 143, 0, 0.3);
+    }
+  }
+}
+.btn4 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  position: relative;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 70%;
+  margin: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  & .Spann:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    animation: animate1 3s linear infinite;
+  }
+  @keyframes animate1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  & .Spann:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    animation: animate2 3s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate2 {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  & .Spann:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    animation: animate3 3s linear infinite;
+  }
+  @keyframes animate3 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  & .Spann:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    animation: animate4 3s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate4 {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.View {
+  color: #05f385;
+}
+.VieWw {
+  color: #cf21ff;
+}
+
+.League_5 {
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+}                                 
+.League_6 {
+  background-color: #05f385;
+  cursor: pointer;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  color: black;
+  filter: drop-shadow(0 0 10px #05f385 ); 
+
+}   
+.League_6:hover {
+  background-color: #01b360;
+
+}                 
+.League_6 > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  letter-spacing: 0.3em;
+}     
+.League_10 {
+  background-color: #05f385;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: black;
+  filter: drop-shadow(0 0 10px #05f385 ); 
+
+}   
+.League_10:hover {
+  background-color: #01b360;
+
+}                 
+.League_10 > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  letter-spacing: 0.3em;
+}      
+.League_8 {
+  background-color: #cf21ff;
+  cursor: pointer;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 10px rgba(225, 0, 255, 0.9)); 
+}                    
+.League_8 > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  letter-spacing: 0.3em;
+}       
+.Timer {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 90%;
+  column-gap: 3px;
+}
+.Timer > span {
+  color: #00A600;
+}
+.ends {
+  color: rgb(120, 120, 120);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Timer_text {
+  display: flex;
+  font-size: 10px;
+  color: rgb(120, 120, 120);
+  width: 92%;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.Image7 {
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+  border: solid black 1px;
+}
+.League_7 {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  color: white;
+  row-gap: 50px;
+}
+.Leagu_div1 {
+  background-color: #212529;
+  border-radius: 8px;
+  width: 70%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+.Leagu_div2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 3%;
+  row-gap: 5px;
+}
+.Leagu_div3 {
+  background-color: #212529;
+  border-radius: 8px;
+  width: 70%;
+  height: 300px;
+  display: flex;
+  padding-left: 5%;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.Leagu_div5 {
+  background-color: #212529;
+  border-radius: 8px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-right: 2%;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 100px;
+}
+.Leagu_div5 > p {
+  line-height: 30px;
+  text-align: justify;
+}
+.Leagu_div4 {
+  width: 100%;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.fill {
+  fill: #05f385;
+  width: 40px;
+  height: 40px;
+}
+.fil {
+  fill: rgb(184, 184, 184);
+  width: 35px;
+  height: 35px;
+}
+.Line_league {
+  width: 80%;
+  background-color: rgb(81, 81, 81);
+  height: 1px;
+
+}
+.TIMELINE {
+  color: rgb(199, 199, 199);
+  margin-top: 1%;
+}
+//  btn5
+.btn-group5 {
+  & a:nth-child(1) {
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.597);
+    & .Spann:nth-child(1) {
+      background: linear-gradient(to right, #646464, #ffffff);
+    }
+    & .Spann:nth-child(2) {
+      background: linear-gradient(to bottom, #646464, #ffffff);
+    }
+    & .Spann:nth-child(3) {
+      background: linear-gradient(to left, #646464, #ffffff);
+    }
+    & .Spann:nth-child(4) {
+      background: linear-gradient(to top, #646464, #ffffff);
+    }
+    &:hover {
+      box-shadow: 0 20px 20px rgb(255, 255, 255);
+    }
+  }
+  & a:nth-child(2) {
+    color: #00A600;
+    & .Spann:nth-child(1) {
+      background: linear-gradient(to right, #0c002b, #996515);
+    }
+    & .Spann:nth-child(2) {
+      background: linear-gradient(to bottom, #0c002b, #996515);
+    }
+    & .Spann:nth-child(3) {
+      background: linear-gradient(to left, #0c002b, #996515);
+    }
+    & .Spann:nth-child(4) {
+      background: linear-gradient(to top, #0c002b, #996515);
+    }
+    &:hover {
+      box-shadow: 0 0 20px rgba(0, 143, 0, 0.3);
+    }
+  }
+}
+.btn5 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  position: relative;
+  height: 1px;
+  width: 30px;
+  margin: 16px;
+  font-size: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 20px rgb(255, 255, 255);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  & .Spann:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    animation: animate1 3s linear infinite;
+  }
+  @keyframes animate1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  & .Spann:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    animation: animate2 3s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate2 {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  & .Spann:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    animation: animate3 3s linear infinite;
+  }
+  @keyframes animate3 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  & .Spann:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    animation: animate4 3s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate4 {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.Winner {
+  display: flex;
+  width: 100%;
+}
+.Start {
+  color: rgb(92, 92, 92);
+}
+.Winner > p {
+  line-height: 25px;
+  margin-right: 3%;
+}
+.Winner2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-right: 5%;
+  row-gap: 10px;
+}
+.Winner1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.About_Game {
+  width: 80%;
+}
+.Flames {
+  color: #9d00ff;
+}
+.ul {
+  line-height: 30px;
+}
+.red {
+  color: rgb(249, 78, 78);
+}
+
+.Organized {
+  background-color: #0f1519;
+  height: 80px;
+  width: 60%;
+  border-radius: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+  align-items: center;
+  display: flex;
+}
+.Boost_price {
+  background-color: #0f1519;
+  height: 270px;
+  width: 70%;
+  border-radius: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.Learn_More {
+  color: #9d00ff;
+}
+.Learn_More:hover {
+  text-decoration: dashed;
+}
+.Boost_price > p {
+  color: rgb(92, 92, 92);
+  line-height: 30px;
+}
+.Flex_Right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: white;
+}
+.Flex_Right > p {
+  color: rgb(92, 92, 92);
+}
+.Social {
+  display: flex;
+  margin-left: auto;
+  column-gap: 10px;
+}
+
+
+.A-text2 {
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu2 {
+  color: #9d00ff;
+  cursor: pointer;
+
+}
+.menu2 .A-text2 {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.menu2 .A-text2::before {
+  box-shadow: 0 0 10px #ffffff,
+                0 0 10px #ffffff;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #000000, #ffffff);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 80px;
+}
+
+.menu2 .A-text2:hover::before {
+  transform: scaleX(1);
+}
+
+.menu2[data-animation="to-left"] .A-text2::before {
+  transform-origin: right;
+}
+
+.menu2[data-animation="center"] .A-text2::before {
+  transform-origin: center;
+}
+
+.menu2[data-animation="bonus"] .A-text2::before {
+  transform-origin: right;
+}
+
+.menu2[data-animation="bonus"] .A-text2:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+
+
+@media only screen and (max-width: 550px) {
+  .League_3 > h1 {
+    font-size: 10px;
+    line-height: 1.5em;
+  }
+  .League_3 {
+    padding-left: 2%;
+    width: 20%;
+  }
+  .League_2 {
+    margin: 0;
+    width: 100%;
+  }
+  .League_4 {
+    width: 25%;
+    justify-content: start;
+    padding-top: 10%;
+    height: 76%;
+  }
+  .League_4 > p {
+    font-size: 8px;
+  }
+  .btn-group4 a{
+    font-size: 10px;
+  }
+  .btn4 {
+    margin: 0;
+    height: 30px;
+  }
+  .Timer {
+    font-size: 20px;
+  }
+  .League_5 {
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .ends {
+    font-size: 10px;
+  }
+  .League_6 {
+    width: 80%;
+  }
+  .League_6 > p {
+    font-size: 12px;
+  }
+  .Main_left_right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  } 
+  .League_7 {
+    width: 100%;
+  }
+  .League_Right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Leagu_div1 {
+    width: 90%;
+  }
+  .Leagu_div3 {
+    width: 90%;
+  }
+  .Leagu_div5 {
+    width: 90%;
+  }
+  .Organized {
+    width: 80%;
+  }
+  .Boost_price {
+    width: 90%;
+  }
+}

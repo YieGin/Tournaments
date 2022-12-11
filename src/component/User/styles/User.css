@@ -1,0 +1,109 @@
+
+.User_main {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.Ladear {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.userlist_main {
+  display: flex;
+  width: 50vw;
+  height: 80px;
+  padding-left: 2%;
+  background-color: #212529;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.userlist_main:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.number {
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  color: white;
+  background-color: rgb(21, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Image1 {
+  width: 70px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Text_user_list1 {
+  color: white;
+}
+.userlist_2 {
+  display: flex;
+  column-gap: 20px;
+}
+.wins {
+  color: #25ba25;
+}
+.lose {
+  color: #ff4444;
+}
+.userlist_main1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.Ladder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  background: linear-gradient(
+    to right, 
+    rgb(255, 255, 255) 0,
+    hsl(0, 0%, 100%) 50%,
+    rgb(163, 162, 162) 20%
+    ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shinee 15000s infinite linear;
+}
+
+ @keyframes shinee {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 4500000px;
+  }
+  100% {
+    background-position: 50px;
+  }
+ }
+
+
+ @media only screen and (max-width: 680px) {
+  .userlist_main {
+    width: 100%;
+    padding-right: 10%;
+  }
+  .lose {
+    
+  }
+  
+ }

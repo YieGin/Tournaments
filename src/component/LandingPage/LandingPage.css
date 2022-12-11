@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.LandingPage_main {
+  background-color: #0f1519;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.LandingPage_left {
+  width: 70%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.LandingPage_left > h2 {
+  display: flex;
+  height: 102px;
+  width: 28%;
+  align-items: center;
+  justify-content: center;
+}
+.LandingPage_list_main {
+  cursor: pointer;
+  display: flex;
+  height: 100px;
+  border-top: solid rgba(101, 101, 101, 0.26) 1px;
+  border-bottom: solid rgba(101, 101, 101, 0.26) 1px;
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+.LandingPage_list_main > h1 {
+  margin-left: 2%;
+  width: 10%;
+}
+.LandingPage_list_main:hover {
+  background-color: black;
+}
+.List_2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 20%;
+}
+.List_2 > h3 {
+  color: #c79e57;
+
+}
+.List_2 > p {
+  color: #8fa3b0;
+}
+.List_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Image1 {
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.Image2 {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.List_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-left: auto;
+  width: 10%;
+}
+.List_right > p {
+  font-size: 13px;
+}
+.LandingPage_right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.Cardright_1:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.FILTER {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 98%;
+  justify-content: center;
+  border: solid 1px  rgba(101, 101, 101, 0.26) ;
+  border-right: none;
+}
+
+.Cardright_1 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 97%;
+  border: solid 1px  rgba(101, 101, 101, 0.26) ;
+  border-right: none;
+  padding-left: 2%;
+}
+.Cardright_2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.Mainleft_move {
+  position: relative;
+  right: 800px;
+  transition: all 1s cubic-bezier(.29,.04,.52,1);
+}
+.Mainleft_top {
+  position: relative;
+  top: 300px;
+  transition: all 1s cubic-bezier(.29,.04,.52,1);
+}
+.Images-6-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.Game_name {
+  font-family: 'Bangers', cursive;
+  color: #ffffff;
+  filter: drop-shadow(88px 85PX 85px 500px rgb(0, 0, 0)); 
+  letter-spacing: 0.5em;
+  font-size: 50px;
+}
+
+.Left_right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1285px)  {
+  .LandingPage_right {
+    width: 100%;
+  }
+  .Left_right {
+    align-items: center;
+    justify-content: center;
+  }
+  .LandingPage_left {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .LandingPage_left > h2 {
+    width: 100%;
+  }
+  .List_right {
+    font-size: 25px;
+    width: 15%;
+  }
+  .Mainleft_move {
+    right: 500px;
+  }
+}
+@media only screen and (max-width: 580px)  {
+  .LandingPage_left {
+    width: 100%;
+  }
+  .Image1 {
+    width: 25px;
+    height: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .List_2 > h3 {
+    font-size: 10px;
+  }
+  .LandingPage_list_main > h1 {
+    font-size: 12px;
+  }
+  .LandingPage_list_main {
+    cursor: pointer;
+    display: flex;
+    height: 100px;
+    border-top: solid rgba(101, 101, 101, 0.26) 1px;
+    border-bottom: solid rgba(101, 101, 101, 0.26) 1px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .List_2 > p {
+    font-size: 10px;
+  }
+  .List_right {
+    font-size: 10px;
+    width: 30%;
+  }
+  .LandingPage_left > h2 {
+    width: 100%;
+  }
+  .List_right > p {
+    font-size: 10px;
+    margin-right: 10%;
+  }
+  .Game_name {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .Mainleft_move {
+    right: 300px;
+  }
+}

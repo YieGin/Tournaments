@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.Footer_main {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  row-gap: 50px;
+}
+.Footer_main > a {
+  font-size: 10px;
+}
+.menuu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 100px;
+  transition: all 1s cubic-bezier(.29,.04,.52,1);
+}
+.Footer_main2 {
+  display: flex;
+  column-gap: 85px;
+}
+
+ul {
+  list-style: none;
+}
+.A-text_footer {
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menuFooter {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.menuFooter .A-text_footer {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.menuFooter .A-text_footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuFooter .A-text_footer:hover::before {
+  transform: scaleX(1);
+}
+
+.menuFooter[data-animation="to-left"] .A-text_footer::before {
+  transform-origin: right;
+}
+
+.menuFooter[data-animation="center"] .A-text_footer::before {
+  transform-origin: center;
+}
+
+.menuFooter[data-animation="bonus"] .A-text_footer::before {
+  transform-origin: right;
+}
+
+.menuFooter[data-animation="bonus"] .A-text_footer:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+@media only screen and (max-width: 950px) {
+  .Footer_main {
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+  }
+  .Footer_main2 {
+    column-gap: 55px;
+  }
+  .Navbar_main {
+    column-gap: 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+  .Footer_main2 {
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .Footer_main {
+    column-gap: 35px;
+  }
+  .Footer_main2 {
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .menuFooter .A-text_footer {
+    font-size: 15px;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+}
