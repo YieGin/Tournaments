@@ -6,12 +6,15 @@
 .app {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.Form_div {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  color: white;
-
+  height: 95vh;
 }
 .ImageLog {
   position: absolute;
@@ -22,12 +25,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   row-gap: 10px;
   padding: 10px 0px 20px 0px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
+  top: 20%;
 }
 .Log {
   padding-top: 3%;
@@ -282,13 +285,115 @@
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+.successfull {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: -100px;
+  transition: all 1s cubic-bezier(.29,.04,.52,1);
+  background-color: rgb(255, 255, 255,0.9);
+  height: 70px;
+  border-radius: 5px;
+  padding-left: 2%;
+  letter-spacing: 0.2em;
+}
+.Close_svg {
+  margin-left: auto;
+  margin-right: 1%;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+.sucssful_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 1285px) {
+  .successfull {
+    font-size: 17px;
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .successful {
+    font-size: 17px;
+    width: 40%;
+  }  
+  .Form_div {
+    height: 120vh;
+  }
+  .ImageLog {
+    height: 130%;
+  }
   .Form {
-    width: 100%;
+    top: 25%;
   }
-  .formInput {
-    width: 100px;
+}
+
+@media only screen and (max-width: 915px) {
+  .successfull {
+    font-size: 17px;
+    width: 40%;
+  }  
+  .Form_div {
+    height: 80vh;
   }
-  
+  .ImageLog {
+    height: 100%;
+  }
+  .Form {
+    top: 15%;
+  }
+}
+@media only screen and (max-width: 545px) {
+  .successfull {
+    font-size: 17px;
+    width: 70%;
+  }  
+  .Form_div {
+    height: 100vh;
+  }
+  .ImageLog {
+    height: 100%;
+  }
+  .Form {
+    top: 25%;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .successfull {
+    font-size: 17px;
+    width: 90%;
+  }  
+  .Form_div {
+    height: 100vh;
+  }
+  .ImageLog {
+    height: 100%;
+  }
+  .Form {
+    top: 25%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .successfull {
+    font-size: 17px;
+    width: 90%;
+  }  
+  .Form_div {
+    height: 100vh;
+  }
+  .ImageLog {
+    height: 100%;
+  }
+  .Form {
+    top: 25%;
+  }
 }

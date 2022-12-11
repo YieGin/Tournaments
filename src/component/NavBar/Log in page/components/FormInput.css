@@ -38,7 +38,7 @@ input:invalid[focused="true"]{
   border: 1px solid red;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 540px) {
   .Form {
     width: 100%;
   }

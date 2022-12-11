@@ -127,8 +127,8 @@ ul {
   .Svgx_Open {
     background-color: black;
     width: 100%;
-    height: 70vh;
-    row-gap: 50px;
+    height: 100vh;
+    row-gap: 100px;
     position: absolute;
     display: flex;
     flex-direction: column;
