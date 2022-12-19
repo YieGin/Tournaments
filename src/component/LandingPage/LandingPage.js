@@ -436,7 +436,7 @@ const LandingPage = () => {
       <Parallax {...parallaxImage3} strength={500} bgImage={Image10}>
         <section className="Images-6-section">
           <div class="waviy-Page4">
-            <h1 className="Game_name">LEAGUE OF LEGEND</h1>
+            <h1 className="Game_name">LEAGUE OF LEGENDS</h1>
           </div>
         </section>
       </Parallax>
