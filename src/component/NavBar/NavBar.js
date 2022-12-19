@@ -136,7 +136,7 @@ const NavBar = () => {
                 className="H1_names"
                 animate={controls}
               >
-                TOURNAMENTS
+                TOURNAMENTSS
               </motion.h1>
             </Link>
             <Link to="/Create">
