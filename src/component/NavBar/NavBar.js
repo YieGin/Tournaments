@@ -58,7 +58,7 @@ const NavBar = () => {
           </li>
         </motion.ul>
       </Link>
-      <Link to="/User">
+      <Link to="/Create">
         <motion.ul
           ref={ref1}
           variants={textScrollVariantsright}
@@ -67,7 +67,7 @@ const NavBar = () => {
           animate={controls1}
         >
           <li class="li-text">
-            <a class="A-text">USERS</a>
+            <a class="A-text">CREATE TOURNAMENTS</a>
           </li>
         </motion.ul>
       </Link>
@@ -139,7 +139,7 @@ const NavBar = () => {
                 TOURNAMENTS
               </motion.h1>
             </Link>
-            <Link to="/User">
+            <Link to="/Create">
               <motion.h1
                 onClick={() => {
                   sethamburger(false);
@@ -151,7 +151,7 @@ const NavBar = () => {
                 className="H1_names"
                 animate={controls}
               >
-                USERS
+                CREATE TOURNAMENTS
               </motion.h1>
             </Link>
             <Link to="/Login">

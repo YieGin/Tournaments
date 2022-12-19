@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
-::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0);
-}
-::-webkit-scrollbar-corner {
-  background: rgba(0,0,0,0);
-}
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  background-color: black;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  border: 0;
-  background-color: rgb(255, 255, 255);
-}
 .To_main {
   background-color: #0f1519;
   height: 100%;

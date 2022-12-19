@@ -37,12 +37,10 @@ ul {
   justify-content: center;
   position: relative;
   right: 100px;
+  width: 100%;
   transition: all 1s cubic-bezier(.29,.04,.52,1);
 }
 
-.menu .li-text {
-  margin-right: 70px;
-}
 
 .menu .A-text {
   position: relative;
@@ -50,6 +48,7 @@ ul {
   padding: 5px;
   cursor: pointer;
   text-decoration: none;
+  width: 100%;
 }
 
 .menu .A-text::before {
@@ -93,7 +92,7 @@ ul {
   transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
 }
 .Icon {
-  width: 100%;
+  width: 50%;
 }
 .ss {
   clip-path: polygon(0 0, 0 1%, 30% 50%, 38% 69%, 50% 100%, 49% 100%, 50% 100%, 61% 69%, 70% 50%, 100% 0, 100% 0, 50% 50%);
@@ -147,6 +146,7 @@ ul {
     position: relative;
     top: -300px;
     transition: all 1s cubic-bezier(.29,.04,.52,1);
+    font-size: 30px;
   }
   .A-text {
     color: inherit;

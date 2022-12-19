@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import "./LandingPage.css";
 import LandingPageList from "./LandingPageList";
 import LandingPageList_right from "./LandingPageList_right";
@@ -11,6 +11,9 @@ import Image13 from "../../Images/13.jpg";
 import Image14 from "../../Images/14.jpg";
 
 const LandingPage = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const parallaxImage3 = {
     bgImageStyle: {
       height: "100%",

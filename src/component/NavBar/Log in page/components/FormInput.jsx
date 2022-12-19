@@ -9,6 +9,14 @@ const FormInput = (props) => {
     setFocused(true);
   };
 
+  const high = (Highe) => {
+    return (props) => {
+      <div>
+        <Highe {...props} />
+      </div>;
+    };
+  };
+
   return (
     <div className="formInput">
       <label>{label}</label>

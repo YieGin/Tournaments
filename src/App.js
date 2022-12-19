@@ -13,6 +13,7 @@ import Cssgo from "./component/Tournament_Open/Cssgo/Cssgo";
 import Mb_lol from "./component/Tournament_Open/Mobile Lol/Mb_lol";
 import Login from "./component/NavBar/Log in page/Login";
 import User from "./component/User/styles/User";
+import Create from "./component/Create Tournaments/Create";
 const App = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/Login" element={<Login />}></Route>
+          <Route path="/Create" element={<Create />}></Route>
           <Route path="/User" element={<User />}></Route>
           <Route path="/Tournament" element={<Tournament />}></Route>
           <Route path="/Lol" element={<Lol />}></Route>

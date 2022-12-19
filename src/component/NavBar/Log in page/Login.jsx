@@ -38,7 +38,6 @@ const Login = () => {
       id: 1,
       name: "username",
       type: "text",
-      placeholder: "Username",
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
       label: "Username",
@@ -49,7 +48,6 @@ const Login = () => {
       id: 2,
       name: "email",
       type: "email",
-      placeholder: "Email",
       errorMessage: "It should be a valid email address!",
       label: "Email",
       required: true,
@@ -59,7 +57,6 @@ const Login = () => {
       id: 3,
       name: "password",
       type: "password",
-      placeholder: "Password",
       errorMessage:
         "Password should be 8-20 characters and include at least 1 letter, 1 number",
       label: "Password",
@@ -70,23 +67,17 @@ const Login = () => {
       id: 4,
       name: "confirmPassword",
       type: "password",
-      placeholder: "Confirm Password",
       errorMessage: "Passwords don't match!",
       label: "Confirm Password",
       pattern: values.password,
       required: true,
     },
-    {
-      id: 5,
-      name: "birthday",
-      type: "date",
-      placeholder: "Birthday",
-      label: "Birthday",
-    },
   ];
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    if (e.preventDefault()) {
+      return true;
+    }
     settext(true);
   };
 
@@ -127,7 +118,7 @@ const Login = () => {
       </div>
       <div className="Form_div">
         <form className="Form" onSubmit={handleSubmit}>
-          <div className="contenttt">
+          <div className="con">
             <h2 className="YieShop">Create New Account</h2>
           </div>
           {inputs.map((input) => (
