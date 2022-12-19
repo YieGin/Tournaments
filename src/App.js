@@ -17,7 +17,7 @@ import Create from "./component/Create Tournaments/Create";
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/Mb_lol" element={<Mb_lol />}></Route>
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
