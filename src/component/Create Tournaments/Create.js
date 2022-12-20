@@ -3,6 +3,25 @@ import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
 import "./styles/create.scss";
+import Image15 from "../../Images/1.jpg";
+import Image16 from "../../Images/16.jpg";
+import Image17 from "../../Images/17.jpg";
+
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  useEffect(() => {
+    let id = setInterval(() => {
+      savedCallback.current();
+    }, delay);
+    return () => clearInterval(id);
+  }, [delay]);
+}
+
 const initialValues = {
   firstName: "",
   lastName: "",
@@ -36,14 +55,46 @@ const Create = () => {
     setSent(true);
   };
 
+  const [Yie, setYie] = useState(1);
+  const max = (n) => {
+    if (n >= images.length) {
+      setYie(1);
+    }
+  };
+  useInterval(() => {
+    setYie(Yie + 1);
+    max(Yie);
+  }, 5000);
+
+  const images = [
+    {
+      id: Image16,
+    },
+    {
+      id: Image17,
+    },
+  ];
+
   return (
     <>
+      <div>
+        {images.map((obj, index) => {
+          return (
+            <a href={obj.link} target="_blank">
+              <img
+                className={index + 1 === Yie ? "active" : "not-active"}
+                src={obj.id}
+              ></img>
+            </a>
+          );
+        })}
+      </div>
       <Box className="Main_box">
         <div className="Co">
           <h1 className="Co">NEW TOURNAMENT</h1>
         </div>
-        <div className="Info">
-          <h1 className="Infoo">BASIC INFO</h1>
+        <div className="Co">
+          <h1 className="Co">BASIC INFO</h1>
         </div>
         <Formik
           onSumbit={handleFormSumbit}
@@ -153,7 +204,6 @@ const Create = () => {
                     <span>SAVE AND CONTINUE</span>
                   </button>
                 </div>
-                {sent && <p>your email sent</p>}
               </Box>
             </form>
           )}
