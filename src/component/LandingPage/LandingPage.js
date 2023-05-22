@@ -435,33 +435,33 @@ const LandingPage = () => {
     <div className="LandingPage_main">
       <Parallax {...parallaxImage3} strength={500} bgImage={Image10}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">LEAGUE OF LEGENDS</h1>
           </div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image11}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">VALORANT</h1>
           </div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image12}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">CALL OF DUTY</h1>
           </div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image13}>
         <section className="Images-6-section">
-          <div class="waviy-Page4"></div>
+          <div className="waviy-Page4"></div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image14}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">Rocket LEAGUE</h1>
           </div>
         </section>

@@ -36,7 +36,7 @@ const Rocket = () => {
       <div className="League_1">
         <Parallax {...parallaxImage3} strength={600} bgImage={Image5}>
           <section className="Images-2-section">
-            <div class="waviy-Page4"></div>
+            <div className="waviy-Page4"></div>
           </section>
         </Parallax>
         <div className="League_2">
@@ -45,8 +45,8 @@ const Rocket = () => {
           </div>
           <div className="League_4">
             <p>Tournament prize pool</p>
-            <div class="btn-group4">
-              <a class="btn4">
+            <div className="btn-group4">
+              <a className="btn4">
                 <span className="Spann"></span>
                 <span className="Spann"></span>
                 <span className="Spann"></span>
@@ -58,8 +58,8 @@ const Rocket = () => {
           </div>
           <div className="League_4">
             <p>Boosted prize pool</p>
-            <div class="btn-group4">
-              <a class="btn4">
+            <div className="btn-group4">
+              <a className="btn4">
                 <span className="Spann"></span>
                 <span className="Spann"></span>
                 <span className="Spann"></span>
@@ -116,8 +116,8 @@ const Rocket = () => {
                   <path d="M3.5 3.75a.25.25 0 01.25-.25h13.5a.25.25 0 01.25.25v10a.75.75 0 001.5 0v-10A1.75 1.75 0 0017.25 2H3.75A1.75 1.75 0 002 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 000-1.5h-7a.25.25 0 01-.25-.25V3.75z"></path>
                   <path d="M6.25 7a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm-.75 4.75a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75zm16.28 4.53a.75.75 0 10-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 10-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l5.5-5.5z"></path>
                 </svg>
-                <div class="btn-group5">
-                  <a class="btn5">
+                <div className="btn-group5">
+                  <a className="btn5">
                     <span className="Spann"></span>
                     <span className="Spann"></span>
                     <span className="Spann"></span>
@@ -269,7 +269,7 @@ const Rocket = () => {
               </ul>
             </div>
           </div>
-          <idv class="League_Right">
+          <idv className="League_Right">
             <div className="Organized">
               <div className="Flex_Right">
                 <p>Organized by</p>
@@ -301,8 +301,8 @@ const Rocket = () => {
                 prize pool can only be won by the highest ranking booster.
               </p>
               <ul className="menu2">
-                <li class="li-text2">
-                  <a class="A-text2">Learn More</a>
+                <li className="li-text2">
+                  <a className="A-text2">Learn More</a>
                 </li>
               </ul>
               <div className="League_8">

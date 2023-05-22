@@ -1,29 +1,14 @@
-import React, { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import "./LandingPage.css";
 const LandingPageList = ({ List }) => {
-  const textScrollVariants = {
-    visible: { opacity: 1, right: 0 },
-    hidden: { opacity: 0 },
-  };
-
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
   return (
     <div className="Mainleft_move">
-      {List.map((ListLanding) => (
-        <div className="LandingPage_list_main">
-          <h1>{ListLanding[0]}</h1>
+      {List.map((ListLanding, index) => (
+        <div key={index} className="LandingPage_list_main">
           <div className="List_flex">
             <div className="List_2">
               <h3>{ListLanding[1]}</h3>
+              <h3>{ListLanding[0]}</h3>
               <p>{ListLanding[2]}</p>
             </div>
             <img className="Image1" src={ListLanding[3]} alt="" />

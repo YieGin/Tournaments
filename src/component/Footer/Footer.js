@@ -25,8 +25,8 @@ const Footer = () => {
           className="menuFooter"
           animate={controls2}
         >
-          <li class="li-text_footer">
-            <a class="A-text_footer">INSTAGRAM</a>
+          <li className="li-text_footer">
+            <a className="A-text_footer">INSTAGRAM</a>
           </li>
         </motion.ul>
         <motion.ul
@@ -36,8 +36,8 @@ const Footer = () => {
           className="menuFooter"
           animate={controls2}
         >
-          <li class="li-text_footer">
-            <a class="A-text_footer">LINKEDIN</a>
+          <li className="li-text_footer">
+            <a className="A-text_footer">LINKEDIN</a>
           </li>
         </motion.ul>
         <motion.ul
@@ -47,8 +47,8 @@ const Footer = () => {
           className="menuFooter"
           animate={controls2}
         >
-          <li class="li-text_footer">
-            <a class="A-text_footer">GITHUB</a>
+          <li className="li-text_footer">
+            <a className="A-text_footer">GITHUB</a>
           </li>
         </motion.ul>
         <motion.ul
@@ -58,8 +58,8 @@ const Footer = () => {
           className="menuFooter"
           animate={controls2}
         >
-          <li class="li-text_footer">
-            <a class="A-text_footer">TWITTER</a>
+          <li className="li-text_footer">
+            <a className="A-text_footer">TWITTER</a>
           </li>
         </motion.ul>
       </div>

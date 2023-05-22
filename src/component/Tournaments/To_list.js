@@ -18,8 +18,9 @@ const To_list = ({ ToList }) => {
   }, [controls, inView]);
   return (
     <div className="dsqdsq">
-      {ToList.map((To_list) => (
+      {ToList.map((To_list, index) => (
         <motion.div
+          key={index}
           ref={ref}
           variants={textScrollVariants}
           initial="hidden"

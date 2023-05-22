@@ -54,8 +54,8 @@ const NavBar = () => {
             className="menu"
             animate={controls1}
           >
-            <li class="li-text">
-              <a class="A-text">TOURNAMENTS</a>
+            <li className="li-text">
+              <a className="A-text">TOURNAMENTS</a>
             </li>
           </motion.ul>
         </Link>
@@ -67,8 +67,8 @@ const NavBar = () => {
             className="menu"
             animate={controls1}
           >
-            <li class="li-text">
-              <a class="A-text">REGISTER</a>
+            <li className="li-text">
+              <a className="A-text">REGISTER</a>
             </li>
           </motion.ul>
         </Link>

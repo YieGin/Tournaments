@@ -319,6 +319,7 @@ const Tournament = () => {
     bgImageStyle: {
       height: "100%",
       width: "100%",
+      objectFit: "cover",
     },
   };
   return (
@@ -333,7 +334,7 @@ const Tournament = () => {
         >
           <Parallax {...parallaxImage3} strength={600} bgImage={Image8}>
             <section className="Images-5-section">
-              <div class="waviy-Page4"></div>
+              <div className="waviy-Page4"></div>
             </section>
           </Parallax>
         </motion.div>
