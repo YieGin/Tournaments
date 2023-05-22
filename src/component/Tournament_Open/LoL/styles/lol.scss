@@ -681,21 +681,26 @@
 
 @media only screen and (max-width: 550px) {
   .League_3 > h1 {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5em;
   }
   .League_3 {
     padding-left: 2%;
+    padding-right: 2%;
     width: 20%;
+    height: 100%;
+    padding-top: 5%;
   }
   .League_2 {
     margin: 0;
     width: 100%;
+    height: 100%;
   }
   .League_4 {
     width: 25%;
     justify-content: start;
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     height: 76%;
   }
   .League_4 > p {
@@ -709,7 +714,7 @@
     height: 30px;
   }
   .Timer {
-    font-size: 20px;
+    font-size: 15px;
   }
   .League_5 {
     width: 35%;
@@ -719,10 +724,11 @@
     padding-top: 0;
   }
   .ends {
-    font-size: 10px;
+    font-size: 8px;
   }
   .League_6 {
     width: 80%;
+    height: 30px;
   }
   .League_6 > p {
     font-size: 12px;
@@ -758,4 +764,18 @@
   .Boost_price {
     width: 90%;
   }
+  .Timer_text {
+    column-gap: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 8px;
+  }
+  .Image7 {
+    width: 50px;
+    height: 50px;
+    border-radius: 80px;
+    object-fit: cover;
+    border: solid black 1px;
+  }
 }
+

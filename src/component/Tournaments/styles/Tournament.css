@@ -361,6 +361,9 @@ h5 {
     right: 200px;
   }
   .To_3rd {
-    height: 70%;
+    height: 50%;
+  }
+  .contenttt {
+    font-size: 15px;
   }
 }

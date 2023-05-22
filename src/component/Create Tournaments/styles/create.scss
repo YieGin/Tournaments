@@ -26,7 +26,7 @@
 .active {
   position:absolute;
   width: 100%;
-  height: 120%;
+  height: 100%;
   opacity: 0.4;
 }
 .Info{
@@ -178,7 +178,8 @@
 
 @media only screen and (max-width: 500px) {
   .btn_Creat {
-    width: 100%;
+    width: 95%;
+    border-radius: 5px;
     height: 55px;
   }
   .Co {
@@ -188,5 +189,8 @@
   }
   .Infoo {
     width: 100%;
+  }
+  .input-block-el {
+    width: 95%;
   }
 }

@@ -42,4 +42,8 @@ input:invalid[focused="true"]{
   .formInput {
     width: 100px;
   }
+  .Error{
+    width: 200%;
+    line-height: 20px;
+  }
 }

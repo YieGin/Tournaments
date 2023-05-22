@@ -17,13 +17,7 @@ const LandingPageList = ({ List }) => {
     }
   }, [controls, inView]);
   return (
-    <motion.div
-      ref={ref}
-      variants={textScrollVariants}
-      initial="hidden"
-      className="Mainleft_move"
-      animate={controls}
-    >
+    <div className="Mainleft_move">
       {List.map((ListLanding) => (
         <div className="LandingPage_list_main">
           <h1>{ListLanding[0]}</h1>
@@ -48,7 +42,7 @@ const LandingPageList = ({ List }) => {
           </div>
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 
