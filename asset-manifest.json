@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/Tournaments/static/css/main.f271d4a9.css",
-    "main.js": "/Tournaments/static/js/main.fda9eac1.js",
+    "main.css": "/Tournaments/static/css/main.6238ff69.css",
+    "main.js": "/Tournaments/static/js/main.e3e0b2de.js",
     "static/media/9.jpg": "/Tournaments/static/media/9.774d5ca1a0ffc9496266.jpg",
     "static/media/5.png": "/Tournaments/static/media/5.1f496425af023dab7c56.png",
     "static/media/4.jpg": "/Tournaments/static/media/4.7fbf1485d0d7b7580a54.jpg",
-    "static/media/16.jpg": "/Tournaments/static/media/16.edfa9e3fc61f681bad7a.jpg",
-    "static/media/15.jpg": "/Tournaments/static/media/15.c6c7e52f998db761b7cf.jpg",
     "static/media/2.png": "/Tournaments/static/media/2.ad6ae3e941ab7902bd03.png",
     "static/media/1.jpg": "/Tournaments/static/media/1.59290b60e1a6d9ff797f.jpg",
     "static/media/13.jpg": "/Tournaments/static/media/13.62d29175c0dc928f73ed.jpg",
@@ -14,17 +12,16 @@
     "static/media/7.png": "/Tournaments/static/media/7.4f2dde0810b06eb82f9a.png",
     "static/media/8.jpg": "/Tournaments/static/media/8.ad95102afe28dd45157b.jpg",
     "static/media/6.png": "/Tournaments/static/media/6.35bca5a9b38d16cb0ae8.png",
-    "static/media/17.jpg": "/Tournaments/static/media/17.2a900e73fd0906546e41.jpg",
     "static/media/10.jpg": "/Tournaments/static/media/10.1cd1897bd874868961a2.jpg",
     "static/media/11.jpg": "/Tournaments/static/media/11.ff126a8b6e4be542be68.jpg",
     "static/media/14.jpg": "/Tournaments/static/media/14.38598bd7396bd41fe617.jpg",
     "static/media/12.jpg": "/Tournaments/static/media/12.b616bcef45726a651133.jpg",
     "index.html": "/Tournaments/index.html",
-    "main.f271d4a9.css.map": "/Tournaments/static/css/main.f271d4a9.css.map",
-    "main.fda9eac1.js.map": "/Tournaments/static/js/main.fda9eac1.js.map"
+    "main.6238ff69.css.map": "/Tournaments/static/css/main.6238ff69.css.map",
+    "main.e3e0b2de.js.map": "/Tournaments/static/js/main.e3e0b2de.js.map"
   },
   "entrypoints": [
-    "static/css/main.f271d4a9.css",
-    "static/js/main.fda9eac1.js"
+    "static/css/main.6238ff69.css",
+    "static/js/main.e3e0b2de.js"
   ]
 }
