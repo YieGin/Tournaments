@@ -43,7 +43,6 @@ const FIFAPs = () => {
         <div className="League_2">
           <div className="League_3">
             <h1>FIFA 23 Seasons Playstation 4</h1>
-            <h1>Tournament 6</h1>
           </div>
           <div className="League_4">
             <p>Tournament prize pool</p>

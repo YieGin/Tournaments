@@ -1,399 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  color: white;
-}
-.Form_div {
+.mainLog {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
-}
-.ImageLog {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.Form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-  padding: 10px 0px 20px 0px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 20%;
-}
-.Log {
-  padding-top: 3%;
-  padding-bottom: 2%;
-}
-.Shoping-Login-Bigger {
-  position: relative;
-  background: #fff;
-  color: rgb(255, 255, 255);
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  width: 250px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-.Shoping-Login-Bigger:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.25em;
-  box-shadow: rgb(253, 252, 255);
-  filter: drop-shadow(0 0 25px rgba(243, 243, 243, 0.9));
-  cursor: pointer;
-}
-.Shoping-Login-Bigger::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  background: #27282c;
-  border-radius: 5px;
+  height: 69.1vh;
+  background-color: #0f1519;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.Shoping-Login-Bigger .Shoping-span-Login {
-  position: relative;
-  z-index: 1;
-}
-.Shoping-login {
-  width: 200px;
-  height: 30px;
-  color: rgb(0, 0, 0);
-  z-index: 1;
-  position: relative;
-  background: #27282c;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-.Shoping-Login-Bigger .Shoping-i-Login {
-  position: absolute;
-  inset: 0;
-  display: block;
-}
-.Shoping-Login-Bigger i::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 80%;
-  width: 10px;
-  height: 4px;
-  background-color: #27282c;
-  transform: translate(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-.Shoping-Login-Bigger:hover i::before {
-  width: 20px;
-  left: 20%;
+.form-container {
+  width: 320px;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
 }
 
-.Shoping-Login-Bigger i::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-  width: 10px;
-  height: 4px;
-  background-color: #27282c;
-  transform: translate(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-.Shoping-Login-Bigger:hover i::after {
-  width: 20px;
-  left: 80%;
-}
-
-
-.Login {
-  position: relative;
-  background: #fff;
-  color: rgb(255, 255, 255);
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  width: 270px;
-  height: 40px;
+.title {
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  transition: 0.5s;
-  border-radius: 5px;
-
-}
-.Login:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.25em;
-  box-shadow: rgb(253, 252, 255);
-  filter: drop-shadow(0 0 25px rgba(243, 243, 243, 0.9));
-  cursor: pointer;
-  
-}
-.Login::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  background: #27282c;
-  border-radius: 5px;
-}
-
-.Login .Login-span-Login {
-  position: relative;
-  z-index: 1;
-  
-}
-.Login .Shoping-i-Login {
-  position: absolute;
-  inset: 0;
-  display: block;
-  
-}
-.Login i::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 80%;
-  width: 10px;
-  height: 4px;
-  background-color: #27282c;
-  transform: translate(-50%) skewX(325deg);
-  transition: 0.5s;
-  
-}
-.Login:hover i::before {
-  width: 20px;
-  left: 20%;
-  
-}
-
-.Login i::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-  width: 10px;
-  height: 4px;
-  background-color: #27282c;
-  transform: translate(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-.Login:hover i::after {
-  width: 20px;
-  left: 80%;
-}
-.haveaccount {
-  margin-bottom: 20px;
-}
-.Register {
-  color: rgb(190, 12, 190);
-}
-.facebook {
-  color: rgb(0, 123, 255);
-}
-.facebook-Twitter {
-  display: flex;
-  row-gap: 10px;
-  column-gap: 50px;
-  cursor: pointer;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-}
-.filll {
-  fill: #9a9a9a;
-  height: 35px;
-  width: 35px;
-  z-index: 1;
-}
-.filll:hover {
-  fill: white;
-}
-.fil {
-  fill: #9a9a9a;
-  height: 40px;
-  width: 40px;
-  z-index: 1;
-}
-.fil:hover {
-  fill: white;
-}
-.button_container .btn:hover {
-  color: white;
-}
-.button_container:hover {
-  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9)); 
-}
-.btn {
-  border: none;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
-  position: relative;
-  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
-  font-size: 15px;
-  background-color: rgb(255, 255, 255);
-  width: 150px;
-  height: 45px;
-  margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
-  border: solid 1px black;
-  
 }
 
-.btn span {
-  position: relative; 
-  z-index: 1;
+.form {
+  margin-top: 1.5rem;
 }
 
-.btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 400%;
-  width: 140%;
-  background: #000000;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+.input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.btn:hover:after {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+.input-group label {
+  display: block;
+  color: rgba(156, 163, 175, 1);
+  margin-bottom: 4px;
 }
-.successfull {
-  width: 30%;
+
+.input-group input {
+  width: 90%;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(55, 65, 81, 1);
+  outline: 0;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 0.75rem 1rem;
+  color: rgba(243, 244, 246, 1);
+}
+
+.input-group input:focus {
+  border-color: rgba(167, 139, 250);
+}
+
+.forgot {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 0, 0);
-  position: absolute;
-  top: -100px;
-  transition: all 1s cubic-bezier(.29,.04,.52,1);
-  background-color: rgb(255, 255, 255,0.9);
-  height: 70px;
-  border-radius: 5px;
-  padding-left: 2%;
-  letter-spacing: 0.2em;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175,1);
+  margin: 8px 0 14px 0;
 }
-.Close_svg {
-  margin-left: auto;
-  margin-right: 1%;
+
+.forgot a,.signup a {
+  color: rgba(243, 244, 246, 1);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot a:hover, .signup a:hover {
+  text-decoration: underline rgba(167, 139, 250, 1);
+}
+
+.sign {
+  display: block;
   cursor: pointer;
-  height: 35px;
-  width: 35px;
-}
-.sucssful_div {
   width: 100%;
+  background-color: rgba(167, 139, 250, 1);
+  padding: 0.75rem;
+  text-align: center;
+  color: rgba(17, 24, 39, 1);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+.social-message {
   display: flex;
   align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.social-icons {
+  display: flex;
   justify-content: center;
-  position: absolute;
 }
 
-@media only screen and (max-width: 1285px) {
-  .successfull {
-    font-size: 17px;
-    width: 30%;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  .successful {
-    font-size: 17px;
-    width: 40%;
-  }  
-  .Form_div {
-    height: 120vh;
-  }
-  .ImageLog {
-    height: 130%;
-  }
-  .Form {
-    top: 25%;
-  }
+.social-icons .icon {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
 }
 
-@media only screen and (max-width: 915px) {
-  .successfull {
-    font-size: 17px;
-    width: 40%;
-  }  
-  .Form_div {
-    height: 80vh;
-  }
-  .ImageLog {
-    height: 100%;
-  }
-  .Form {
-    top: 15%;
-  }
+.social-icons .icon svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: #fff;
+  cursor: pointer;
 }
-@media only screen and (max-width: 545px) {
-  .successfull {
-    font-size: 17px;
-    width: 70%;
-  }  
-  .Form_div {
-    height: 100vh;
-  }
-  .ImageLog {
-    height: 100%;
-  }
-  .Form {
-    top: 25%;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .successfull {
-    font-size: 17px;
-    width: 90%;
-  }  
-  .Form_div {
-    height: 100vh;
-  }
-  .ImageLog {
-    height: 100%;
-  }
-  .Form {
-    top: 25%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .successfull {
-    font-size: 17px;
-    width: 90%;
-  }  
-  .Form_div {
-    height: 100vh;
-  }
-  .ImageLog {
-    height: 100%;
-  }
-  .Form {
-    top: 25%;
-  }
+
+.signup {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
 }

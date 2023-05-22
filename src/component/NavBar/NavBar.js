@@ -45,45 +45,34 @@ const NavBar = () => {
           />
         </Link>
       </div>
-      <Link to="/Tournament">
-        <motion.ul
-          ref={ref1}
-          variants={textScrollVariantsright}
-          initial="hidden"
-          className="menu"
-          animate={controls1}
-        >
-          <li class="li-text">
-            <a class="A-text">TOURNAMENTS</a>
-          </li>
-        </motion.ul>
-      </Link>
-      <Link to="/Create">
-        <motion.ul
-          ref={ref1}
-          variants={textScrollVariantsright}
-          initial="hidden"
-          className="menu"
-          animate={controls1}
-        >
-          <li class="li-text">
-            <a class="A-text">CREATE TOURNAMENTS</a>
-          </li>
-        </motion.ul>
-      </Link>
-      <Link to="/Login">
-        <motion.ul
-          ref={ref1}
-          variants={textScrollVariantsright}
-          initial="hidden"
-          className="menu"
-          animate={controls1}
-        >
-          <li class="li-text">
-            <a class="A-text">REGISTER</a>
-          </li>
-        </motion.ul>
-      </Link>
+      <div style={{ display: "flex", marginLeft: "auto", columnGap: "50px" }}>
+        <Link to="/Tournament">
+          <motion.ul
+            ref={ref1}
+            variants={textScrollVariantsright}
+            initial="hidden"
+            className="menu"
+            animate={controls1}
+          >
+            <li class="li-text">
+              <a class="A-text">TOURNAMENTS</a>
+            </li>
+          </motion.ul>
+        </Link>
+        <Link to="/Login">
+          <motion.ul
+            ref={ref1}
+            variants={textScrollVariantsright}
+            initial="hidden"
+            className="menu"
+            animate={controls1}
+          >
+            <li class="li-text">
+              <a class="A-text">REGISTER</a>
+            </li>
+          </motion.ul>
+        </Link>
+      </div>
       {hamburger2 && (
         <div
           onClick={() => {
